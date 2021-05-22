@@ -1,0 +1,81 @@
+*----------------------------------------------------------------------------------------
+*	First Encounter 08.10-s273_1 (32bit) 06/16/2009 02:26 (Linux 2.6)
+*	
+*
+* 	Date & Time:	2013-Oct-10 00:27:56 (2013-Oct-09 22:27:56 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: hight
+*
+*	Liberty Libraries used: 
+*	        /Back_End_Flow/SoC_Encounter_UMC130_files/Maximum_Timing_Library/fsc0h_d_generic_core_ss1p08v125c.lib
+*	        /Back_End_Flow/SoC_Encounter_UMC130_files/Maximum_Timing_Library/foc0h_a33_t33_generic_io_ss1p08v125c.lib
+*	        /Back_End_Flow/Documentation/SoC_Encounter/Typical_Timing_Libraries/fsc0h_d_generic_core_tt1p2v25c.lib
+*	        /Back_End_Flow/Documentation/SoC_Encounter/Typical_Timing_Libraries/foc0h_a33_t33_generic_io_tt1p2v25c.lib
+*
+*	Power Domain used: 
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Clock Gates Enable Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile hight.pwr
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:      0.9903      55.55%
+Total Switching Power:     0.7764      43.55%
+Total Leakage Power:      0.01598     0.8964%
+Total Power:                1.783 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.5836      0.2498    0.004652      0.8381       47.01 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                     0.4067      0.5266     0.01133      0.9446       52.99 
+Clock (Combinational)                  0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.9903      0.7764     0.01598       1.783         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default rail
+                         1.08     0.9903      0.7764     0.01598       1.783         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:  roundfunction/X0x_reg[4] (QDFFEHD): 	  0.006781 
+* 		Highest Leakage Power:        roundfunction/U355 (XOR4EHD): 	 3.103e-05 
+* 		Total Cap: 	1.86025e-11 F
+* 		Total instances in design:  1456
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activty:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

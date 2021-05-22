@@ -1,0 +1,44 @@
+(globals
+    version = 3
+    io_order = default
+)
+(iopin
+    (top
+	(pin name="Iin[0]"	offset=36 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[1]"	offset=37 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[2]"	offset=38 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[3]"	offset=39 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[4]"	offset=40 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[5]"	offset=41 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[6]"	offset=42 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[7]"	offset=43 layer=4 width=0.4000 depth=0.5 )
+
+        (pin name="Iin[8]"	offset=44 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[9]"	offset=56 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[10]"	offset=57 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[11]"	offset=58 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[12]"	offset=59 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[13]"	offset=60 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[14]"	offset=61 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[15]"	offset=62 layer=4 width=0.4000 depth=0.5 )
+
+	(pin name="Iin[16]"	offset=63 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[17]"	offset=64 layer=4 width=0.4000 depth=0.5 )
+	(pin name="Iin[18]"	offset=76 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[19]"	offset=77 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[20]"	offset=78 layer=4 width=0.4000 depth=0.5 )
+        (pin name="Iin[21]"	offset=79 layer=4 width=0.4000 depth=0.5 )
+        
+
+      
+    )
+	
+     (left 
+	 
+        (pin name="clk"	        offset=60 layer=4 width=0.4000 depth=0.5 )
+        (pin name="reset"	offset=61 layer=4 width=0.4000 depth=0.5 )
+	(pin name="spike"	offset=62 layer=4 width=0.4000 depth=0.5 ) 
+
+ )
+
+)

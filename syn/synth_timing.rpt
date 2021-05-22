@@ -1,0 +1,499 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : hight
+Version: B-2008.09
+Date   : Sat Oct 27 18:31:13 2018
+****************************************
+
+Operating Conditions: WCCOM   Library: fsc0h_d_generic_core_ss1p08v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: subkey/i_round_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx3_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[5]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[5]/Q (QDFFEHD)        0.35       0.35 r
+  subkey/U595/O (OR2B1CHD)                 0.20       0.55 r
+  subkey/U584/O (NR2BHD)                   0.22       0.77 f
+  subkey/U583/O (INVCHD)                   0.38       1.15 r
+  subkey/U582/O (NR2BHD)                   0.16       1.31 f
+  subkey/U581/O (INVCHD)                   0.16       1.48 r
+  subkey/U580/O (OAI12CHD)                 0.64       2.12 f
+  subkey/U51/O (BUFEHD)                    0.33       2.45 f
+  subkey/U23/O (INVDHD)                    0.06       2.51 r
+  subkey/U22/O (BUFEHD)                    0.10       2.61 r
+  subkey/U190/O (ND6EHD)                   0.19       2.80 f
+  subkey/U189/O (AN4B1BHD)                 0.10       2.89 r
+  subkey/U183/O (ND2CHD)                   0.16       3.06 f
+  subkey/U182/O (AN4B1BHD)                 0.12       3.17 r
+  subkey/U71/O (AN2EHD)                    0.57       3.74 r
+  subkey/U148/O (AOI22BHD)                 0.17       3.91 f
+  subkey/U147/O (AN4B1BHD)                 0.26       4.17 f
+  subkey/U146/O (ND6EHD)                   0.23       4.40 r
+  subkey/dx3_reg[6]/D (QDFFEHD)            0.00       4.40 r
+  data arrival time                                   4.40
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx3_reg[6]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.12       9.38
+  data required time                                  9.38
+  -----------------------------------------------------------
+  data required time                                  9.38
+  data arrival time                                  -4.40
+  -----------------------------------------------------------
+  slack (MET)                                         4.98
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U122/O (AOI112BHD)                0.25       3.98 r
+  subkey/U121/O (OR3B2CHD)                 0.09       4.07 f
+  subkey/dx0_reg[0]/D (QDFFEHD)            0.00       4.07 f
+  data arrival time                                   4.07
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[0]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.16       9.34
+  data required time                                  9.34
+  -----------------------------------------------------------
+  data required time                                  9.34
+  data arrival time                                  -4.07
+  -----------------------------------------------------------
+  slack (MET)                                         5.27
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U120/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx0_reg[1]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[1]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U119/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx0_reg[2]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[2]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U118/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx0_reg[3]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[3]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U117/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx0_reg[4]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[4]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U116/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx0_reg[5]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[5]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx0_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U115/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx0_reg[6]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx0_reg[6]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx1_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U130/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx1_reg[0]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx1_reg[0]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+  Startpoint: subkey/i_round_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: subkey/dx1_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hight              enG10K                fsc0h_d_generic_core_ss1p08v125c
+  SK_gen             enG5K                 fsc0h_d_generic_core_ss1p08v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  subkey/i_round_reg[1]/CK (QDFFEHD)       0.00       0.00 r
+  subkey/i_round_reg[1]/Q (QDFFEHD)        0.30       0.30 f
+  subkey/U594/O (NR2BHD)                   0.16       0.46 r
+  subkey/U591/O (INVCHD)                   0.08       0.54 f
+  subkey/U590/O (NR2BHD)                   0.42       0.96 r
+  subkey/U589/O (INVCHD)                   0.31       1.27 f
+  subkey/U580/O (OAI12CHD)                 1.12       2.39 r
+  subkey/U51/O (BUFEHD)                    0.20       2.59 r
+  subkey/U23/O (INVDHD)                    0.04       2.63 f
+  subkey/U22/O (BUFEHD)                    0.13       2.76 f
+  subkey/U190/O (ND6EHD)                   0.22       2.98 r
+  subkey/U189/O (AN4B1BHD)                 0.07       3.05 f
+  subkey/U183/O (ND2CHD)                   0.22       3.27 r
+  subkey/U182/O (AN4B1BHD)                 0.11       3.38 f
+  subkey/U71/O (AN2EHD)                    0.36       3.74 f
+  subkey/U129/O (AO12CHD)                  0.20       3.94 f
+  subkey/dx1_reg[1]/D (QDFFEHD)            0.00       3.94 f
+  data arrival time                                   3.94
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  subkey/dx1_reg[1]/CK (QDFFEHD)           0.00       9.50 r
+  library setup time                      -0.15       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -3.94
+  -----------------------------------------------------------
+  slack (MET)                                         5.41
+
+
+1

@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: ./saving/hight_place.enc                     
+#                                              #
+################################################
+restoreDesign ./saving/hight_place.enc.dat hight

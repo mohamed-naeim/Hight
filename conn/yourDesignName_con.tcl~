@@ -1,0 +1,26 @@
+
+# Creates a clock named "clk" and in RTL called "clk" with period 10 timing units with 50% duty cycle "see .lib for units"
+create_clock -name clk -period 8 -waveform {0 4} [get_ports clk]
+
+# Tell DC not to buffer the clock network as we will do it in details in PnR tool
+set_dont_touch_network [get_clocks clk]
+
+# Constrain all input ports for max. timing except for the clk port "Recommended: make it 50 or 60 % of clk period"
+set_input_delay -max 1 -clock [get_clocks clk] [remove_from_collection [get_ports -filter "@pin_direction=~ in"] [get_ports clk]]
+
+# Constrain all output ports for max. timing "Recommended: make it 50 or 60 % of clk period"
+set_output_delay -max 1 -clock [get_clocks clk] [get_ports -filter "@pin_direction=~ out"]
+
+# Just estimate the difference between clock edges through the clock tree branches to be 0.35 timing units 
+set_clock_uncertainty -setup 0.5 [get_clocks clk]
+
+# Estimate the time taken by the clock signal to reach the clock port of your design to be 3 timing units
+#set_clock_latency -source 3 [get_clocks clk]
+
+# Estimate the propagation delay of clock signal from the clock port to the farthest flip flop to be 1 timing units
+#set_clock_latency 1 [get_clocks clk]
+
+# Disable hold time checking on all purely combinational paths from input ports to output ports
+set_false_path -hold -from [remove_from_collection [get_ports * -filter "@pin_direction=~ in"] [get_ports clk]]
+set_false_path -hold -to [get_ports * -filter "@pin_direction=~ out"]
+

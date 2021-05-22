@@ -1,0 +1,87 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu Oct 10 00:18:13 2013                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: First Encounter v08.10-s273_1 (32bit) 06/16/2009 02:26 (Linux 2.6)
+#@(#)CDS: NanoRoute v08.10-s155 NR090610-1622/USR60-UB (database version 2.30, 78.1.1) {superthreading v1.11}
+#@(#)CDS: CeltIC v08.12-s254_1 (32bit) 06/11/2009 13:55:16 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CTE v08.10-s204_1 (32bit) Jun 10 2009 13:59:08 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CPE v08.12-s010
+
+loadConfig ./Default.conf
+commitConfig
+floorPlan -d 163 163 0 0 0 0
+loadIoFile hight.io
+addStripe -nets {vdd gnd} -layer metal5 -width 4 -direction Horizontal -set_to_set_distance 36 -spacing 2 -start_y 5 -stop_y 158
+addStripe -nets {vdd gnd} -layer metal4 -width 4 -direction Vertical -set_to_set_distance 36 -spacing 2 -start_x 5 -stop_x 158
+addIoFiller -prefix fill_io -cell EMPTY1HA
+sroute -allowLayerChange 1 -blockPinTarget nearestTarget -crossoverViaBottomLayer M1 -crossoverViaTopLayer M4 -layerChangeRange {M1 M4} -nets {vdd gnd}
+addEndCap -precap FILLER4EHD -postcap FILLER4EHD -prefix EndCap
+saveDesign ./saving/hight.enc
+timeDesign -prePlace -idealClock -drvReports -outDir ./reports/preplace_timing
+timeDesign -prePlace -idealClock -hold -outDir ./reports/preplace_timing
+setPlaceMode -clkGateAware true -congEffort medium -ignoreScan -timingDriven true
+placeDesign
+timeDesign -preCTS -idealClock -drvReports -outDir ./reports/place_timing
+timeDesign -preCTS -idealClock -hold -outDir ./reports/place_timing
+optDesign -preCTS
+saveDesign ./saving/hight_place.enc
+timeDesign -preCTS -idealClock -drvReports -outDir ./reports/postplace_timing
+timeDesign -preCTS -idealClock -hold -outDir ./reports/postplace_timing
+setCTSMode -moveGate true -opt true -optArea true -optLatency true -routeClkNet true -routeBottomPreferredLayer 1 -routeTopPreferredLayer 4
+clockDesign -specFile /root/hight/apr/Clock.ctstch
+timeDesign -postCTS -drvReports -outDir ./reports/cts_timing
+timeDesign -postCTS -hold -outDir ./reports/cts_timing
+optDesign -postCTS
+saveDesign ./saving/hight_cts.enc
+timeDesign -postCTS -drvReports -outDir ./reports/postcts_timing
+timeDesign -postCTS -hold -outDir ./reports/postcts_timing
+routeDesign -globalDetail -viaOpt -wireOpt
+timeDesign -postRoute -drvReports -outDir ./reports/route_timing
+timeDesign -postRoute -hold -outDir ./reports/route_timing
+optDesign -postRoute
+optDesign -postRoute -hold
+saveDesign ./saving/hight_route.enc
+timeDesign -postRoute -drvReports -outDir ./reports/postroute_timing
+timeDesign -postRoute -hold -outDir ./reports/postroute_timing
+addFiller -cell {FILLER1HD FILLER2HD FILLER3HD FILLER4EHD FILLER8EHD FILLER16EHD FILLER32EHD FILLER64EHD}
+extractRC -outfile ./hight_rc
+write_sdf hight.sdf
+saveNetlist ./hight.v -includePowerGround
+report_power -dynamic -outfile hight.pwr
+fit
+saveDesign ./saving/hight.enc
+fit
+fit
+loadConfig ./Default.conf
+commitConfig
+floorPlan -d 163 163 0 0 0 0
+loadIoFile hight.io
+addStripe -nets {vdd gnd} -layer metal5 -width 4 -direction Horizontal -set_to_set_distance 36 -spacing 2 -start_y 5 -stop_y 158
+addStripe -nets {vdd gnd} -layer metal4 -width 4 -direction Vertical -set_to_set_distance 36 -spacing 2 -start_x 5 -stop_x 158
+addIoFiller -prefix fill_io -cell EMPTY1HA
+sroute -allowLayerChange 1 -blockPinTarget nearestTarget -crossoverViaBottomLayer M1 -crossoverViaTopLayer M4 -layerChangeRange {M1 M4} -nets {vdd gnd}
+addEndCap -precap FILLER4EHD -postcap FILLER4EHD -prefix EndCap
+saveDesign ./saving/hight.enc
+timeDesign -prePlace -idealClock -drvReports -outDir ./reports/preplace_timing
+timeDesign -prePlace -idealClock -hold -outDir ./reports/preplace_timing
+setPlaceMode -clkGateAware true -congEffort medium -ignoreScan -timingDriven true
+placeDesign
+timeDesign -preCTS -idealClock -drvReports -outDir ./reports/place_timing
+timeDesign -preCTS -idealClock -hold -outDir ./reports/place_timing
+optDesign -preCTS
+saveDesign ./saving/hight_place.enc
+timeDesign -preCTS -idealClock -drvReports -outDir ./reports/postplace_timing
+timeDesign -preCTS -idealClock -hold -outDir ./reports/postplace_timing
+setCTSMode -moveGate true -opt true -optArea true -optLatency true -routeClkNet true -routeBottomPreferredLayer 1 -routeTopPreferredLayer 4
+clockDesign -specFile /root/hight/apr/Clock.ctstch
+timeDesign -postCTS -drvReports -outDir ./reports/cts_timing
+timeDesign -postCTS -hold -outDir ./reports/cts_timing
+optDesign -postCTS
+saveDesign ./saving/hight_cts.enc
+timeDesign -postCTS -drvReports -outDir ./reports/postcts_timing
+timeDesign -postCTS -hold -outDir ./reports/postcts_timing
+routeDesign -globalDetail -viaOpt -wireOpt

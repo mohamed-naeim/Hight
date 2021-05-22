@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : qor
+Design : hight
+Version: B-2008.09
+Date   : Sat Oct 27 18:31:10 2018
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              17.00
+  Critical Path Length:          4.40
+  Critical Path Slack:           4.98
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         25
+  Hierarchical Port Count:       1221
+  Leaf Cell Count:               1557
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    16860.159939
+  Noncombinational Area:  6886.399982
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             23746.559922
+  Design Area:           23746.559922
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          1933
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: localhost.localdomain
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              1.33
+  Logic Optimization:            2.45
+  Mapping Optimization:          1.95
+  -----------------------------------
+  Overall Compile Time:         10.06
+
+1

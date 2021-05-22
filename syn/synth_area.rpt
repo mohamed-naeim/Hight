@@ -1,0 +1,25 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : hight
+Version: B-2008.09
+Date   : Sat Oct 27 18:31:10 2018
+****************************************
+
+Library(s) Used:
+
+    fsc0h_d_generic_core_ss1p08v125c (File: /Back_End_Flow/UMC130_Technoloy/fsc0h_d_generic_core_ss1p08v125c.db)
+
+Number of ports:              259
+Number of nets:               323
+Number of cells:                3
+Number of references:           3
+
+Combinational area:       16860.159939
+Noncombinational area:    6886.399982
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          23746.559922
+Total area:                 undefined
+1

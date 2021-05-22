@@ -1,0 +1,26 @@
+ 
+****************************************
+Report : cell
+Design : hight
+Version: B-2008.09
+Date   : Sat Oct 27 18:31:10 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+roundfunction             round_funct                     14022.399935
+                                                                    h, n
+subkey                    SK_gen                          8159.999969
+                                                                    h, n
+whitening                 WK                              1564.160018
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 3 cells                                             23746.559922
+1

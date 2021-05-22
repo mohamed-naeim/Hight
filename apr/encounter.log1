@@ -1,0 +1,103 @@
+Checking out Encounter license ...
+SOC_Encounter_GXL 8.1 license checkout succeeded.
+This Encounter release has been compiled with OA version 22.04-p044.
+sourcing /usr/cds/SoC81/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-s273_1 (32bit) 06/16/2009 02:26 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-s155 NR090610-1622/USR60-UB (database version 2.30, 78.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.12-s254_1 (32bit) 06/11/2009 13:55:16 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-s204_1 (32bit) Jun 10 2009 13:59:08 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.12-s010
+--- Starting "First Encounter v08.10-s273_1" on Thu Oct 10 03:58:37 2013 (mem=62.1M) ---
+--- Running on localhost.localdomain (i686 w/Linux 2.6.9-5.EL) ---
+This version was compiled on Tue Jun 16 02:26:11 PDT 2009.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Default Total Res Scale Factor to 1.00
+Set Detail Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+sourcing /root/.enc
+Sourcing tcl/tk file "/root/.enc" ...
+sourcing /root/.enc.color.tcl
+Sourcing tcl/tk file "/root/.enc.color.tcl" ...
+<CMD> loadConfig ./Default.conf
+Reading config file - ./Default.conf
+
+Loading Lef file /Back_End_Flow/Documentation/SoC_Encounter/LEF_files/header8m2t_V55.lef...
+
+Loading Lef file /Back_End_Flow/Documentation/SoC_Encounter/LEF_files/fsc0h_d_generic_core.lef...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /Back_End_Flow/Documentation/SoC_Encounter/LEF_files/fsc0h_d_generic_core.lef at line 1.
+Set DBUPerIGU to M2 pitch 400.
+Initializing default via types and wire widths ...
+
+Loading Lef file /Back_End_Flow/Documentation/SoC_Encounter/LEF_files/foc0h_a33_t33_generic_io.7m1t.lef...
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file /Back_End_Flow/Documentation/SoC_Encounter/LEF_files/foc0h_a33_t33_generic_io.7m1t.lef at line 3642.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically illegal.
+Refer the LEF/DEF 5.5 and earlier Language Referece manual on how to define this statement. See file /Back_End_Flow/Documentation/SoC_Encounter/LEF_files/foc0h_a33_t33_generic_io.7m1t.lef at line 3642.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Oct 10 03:58:45 2013
+viaInitial ends at Thu Oct 10 03:58:45 2013
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../syn/output/hight.v'
+Inserting temporary buffers to remove assignment statements.
+Module round_f not defined.  Created automatically.
+**WARN: (SOCVL-346):	Module round_f is not defined in LEF files.  It will be treated as an empty module.
+Undeclared bus p1 in module round_f ... created as [63:0].
+Undeclared bus p2 in module round_f ... created as [127:0].
+Undeclared bus p3 in module round_f ... created as [7:0].
+Undeclared bus p4 in module round_f ... created as [7:0].
+Undeclared bus p5 in module round_f ... created as [7:0].
+Undeclared bus p6 in module round_f ... created as [7:0].
+Undeclared bus p10 in module round_f ... created as [7:0].
+Undeclared bus p11 in module round_f ... created as [7:0].
+Undeclared bus p12 in module round_f ... created as [7:0].
+Undeclared bus p13 in module round_f ... created as [7:0].
+Undeclared bus p14 in module round_f ... created as [63:0].
+
+*** Memory Usage v0.144.6.3 (Current mem = 192.293M, initial mem = 62.125M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=192.3M) ***
+Top level cell is hight.
+Reading max timing library '/Back_End_Flow/SoC_Encounter_UMC130_files/Maximum_Timing_Library/fsc0h_d_generic_core_ss1p08v125c.lib' ...
+No function defined for cell 'ANTHD'. The cell will only be used for analysis.
+ read 407 cells in library 'fsc0h_d_generic_core_ss1p08v125c' 
+Reading max timing library '/Back_End_Flow/SoC_Encounter_UMC130_files/Maximum_Timing_Library/foc0h_a33_t33_generic_io_ss1p08v125c.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'O' of cell 'YA28SHA' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'O' of cell 'YA28SHB' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'O' of cell 'YA4GSHA' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'O' of cell 'YA4GSHB' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'IO' of cell 'ZMA28SHA' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'IO' of cell 'ZMA28SHB' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'IO' of cell 'ZMA4GSHA' is not defined in the library
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on output/inout pin 'IO' of cell 'ZMA4GSHB' is not defined in the library
+ read 10 cells in library 'foc0h_a33_t33_generic_io_ss1p08v125c' 
+Reading min timing library '/Back_End_Flow/SoC_Encounter_UMC130_files/Minimum_Timing_Libraries/fsc0h_d_generic_core_ff1p32vm40c.lib' ...
